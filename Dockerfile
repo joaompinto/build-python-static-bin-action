@@ -2,6 +2,7 @@
 
 FROM joaompinto/build-python-static-bin
 
+USER root
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
