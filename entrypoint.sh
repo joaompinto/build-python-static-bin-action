@@ -1,13 +1,6 @@
 #!/bin/sh
-env 
-pwd
-ls -ltr *
-mkdir -p $GITHUB_WORKSPACE/xpto
-exit 1
 
-export NUITKA_CACHE_DIR=/tmp/cache
-
-nuitka3  --output-dir=/tmp/static \
+nuitka3 \
     --disable-ccache \
     --python-flag=no_site --python-flag=no_warnings \
     --show-progress \
