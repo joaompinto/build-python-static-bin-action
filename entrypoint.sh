@@ -1,5 +1,6 @@
 #!/bin/sh
 pwd
+ls -ltr *
 ls -ltr requiremements.txt
 [[ -f requiremements.txt ]] && pip install --no-cache -r requiremements.txt
 exit 1
