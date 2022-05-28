@@ -26,3 +26,4 @@ WORKDIR /build
 ENV LDFLAGS "-static -l:libpython3.10.a"
 
 COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
