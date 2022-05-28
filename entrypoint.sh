@@ -1,4 +1,9 @@
 #!/bin/sh
+env 
+pwd
+ls -ltr *
+exit 1
+
 export NUITKA_CACHE_DIR=/tmp/cache
 
 nuitka3  --output-dir=/tmp/static \
