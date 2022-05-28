@@ -1,5 +1,5 @@
 #!/bin/sh
-export NUITKA_CACHE_DIR=${RUNNER_WORKSPACE}/cache
+export NUITKA_CACHE_DIR=/tmp/cache
 
 nuitka3  --output-dir=/tmp/static \
     --disable-ccache \
