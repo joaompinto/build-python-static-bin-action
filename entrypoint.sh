@@ -2,7 +2,7 @@
 pwd
 ls -ltr *
 ls -ltr requiremements.txt
-[[ -f requiremements.txt ]] && pip install --no-cache -r requiremements.txt
+[[ -f requirements.txt]] && pip install --no-cache -r requirements.txt
 exit 1
 nuitka3 --python-flag=no_site \
     --disable-ccache \
