@@ -2,6 +2,7 @@
 env 
 pwd
 ls -ltr *
+mkdir -p $GITHUB_WORKSPACE/xpto
 exit 1
 
 export NUITKA_CACHE_DIR=/tmp/cache
