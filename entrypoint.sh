@@ -1,5 +1,5 @@
 #!/bin/sh
-NUITKA_CACHE_DIR=/tmp/cache
+export NUITKA_CACHE_DIR=/tmp/cache
 
 nuitka3  --output-dir=/tmp/static \
     --disable-ccache --disable-bytecode-cache \
