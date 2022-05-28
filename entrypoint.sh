@@ -1,5 +1,6 @@
 #!/bin/sh
-
+pwd
+ls -ltr requiremements.txt
 [[ -f requiremements.txt ]] && pip install --no-cache -r requiremements.txt
 nuitka3 --python-flag=no_site \
     --disable-ccache \
