@@ -1,7 +1,7 @@
 #!/bin/sh
-export NUITKA_CACHE_DIR=/tmp/cache
+export NUITKA_CACHE_DIR=${GITHUB_WORKSPACE}/cache
 
-nuitka3  \
+nuitka3  --output-dir=/tmp/static \
     --disable-ccache \
     --python-flag=no_site --python-flag=no_warnings \
     --show-progress \
